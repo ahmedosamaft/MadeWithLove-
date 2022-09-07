@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="/style/all.min.css" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <title>Made With Love ❤️ Ahmed Osama</title>
+  </head>
+  <body>
+    <!-- Start Landing -->
+    <!-- Settings -->
+    <div class="settings-box" id="container">
+      <div class="gear-box" id="gear">
+        <i class="fa-solid fa-gear gear"></i>
+      </div>
+      <div class="settings-container">
+        <div class="option">
+          <h3>Colors</h3>
+          <ul id="colorOptions">
+            <li data-color="#FF9800" class="active"></li>
+            <li data-color="#E91E63"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#03A9F4"></li>
+            <li data-color="#4CAF50"></li>
+          </ul>
+        </div>
+        <div class="option">
+          <h3>Random Backgrounds</h3>
+          <div class="choose" id="random">
+            <button class="yes">Yes</button>
+            <button class="no">No</button>
+          </div>
+        </div>
+        <div class="option">
+          <h3>Show Bullets</h3>
+          <div class="choose" id="bull">
+            <button class="yes btn">Yes</button>
+            <button class="no btn">No</button>
+          </div>
+        </div>
+        <button class="rest" id="rest">Rest Options</button>
+      </div>
+    </div>
+    <!-- Bullets -->
+    <div class="bullets" id="bullbox">
+      <ul id="bullets">
+        <li data-section="#about"><div class="tooltip">About Us</div></li>
+        <li data-section="#skills"><div class="tooltip">Skills</div></li>
+        <li data-section="#gallery"><div class="tooltip">Gallery</div></li>
+        <li data-section="#timeline"><div class="tooltip">Timeline</div></li>
+        <li data-section="#features"><div class="tooltip">Features</div></li>
+        <li data-section="#testimonials">
+          <div class="tooltip">Testimonials</div>
+        </li>
+      </ul>
+    </div>
+    <div class="landing-page" id="landingPage">
+      <div class="overlay"></div>
+      <header>
+        <div class="logo wow animate__zoomInUp">Special Design</div>
+        <div class="links">
+          <i class="fa-solid fa-bars bars" id="bars"></i>
+          <!-- <i class="fa-solid fa-bars-staggered bars"></i> -->
+          <ul id="linkList" class="wow animate__zoomInUp">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="intro">
+        <h1>
+          <span class="wow animate__fadeIn" data-wow-delay="0.1s"> We </span>
+          <span class="wow animate__fadeIn" data-wow-delay="0.3s"> are </span>
+          <span class="wow animate__fadeIn" data-wow-delay="0.5s"
+            >Creative </span
+          ><span class="wow animate__fadeIn" data-wow-delay="0.7s">Agency</span>
+        </h1>
+        <p>
+          <span
+            class="wow fadeInDown"
+            data-wow-duration="2s"
+            data-wow-delay="0.8s"
+            data-wow-duration="0.3s"
+            >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span
+          >
+          <br />
+          <span
+            class="wow fadeInDown"
+            data-wow-duration="2s"
+            data-wow-delay="1s"
+            data-wow-duration="0.3s"
+            >Fugit dolores optio recusandae, corporis quod tempora.</span
+          >
+        </p>
+      </div>
+    </div>
+    <!-- End Landing -->
+    <!-- About -->
+    <div class="container" id="about">
+      <div class="about">
+        <div class="about-text">
+          <h3 id="about" class="wow animate__bounceInLeft">About US</h3>
+          <p class="wow animate__bounceInUp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            ipsum, tenetur dolores esse magni ratione distinctio! Quod iusto
+            neque fuga, maxime quos nostrum quibusdam dicta deserunt blanditiis
+            non voluptate id?
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="imgs/about-us.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End About -->
+    <!-- ٍٍSkills -->
+    <div class="skills" id="skills">
+      <div class="container">
+        <h3>Our Skills</h3>
+        <div class="skills-prog">
+          <div class="skill">
+            <h5>HTML</h5>
+            <span><span class="prog" data-progress="60%"> </span></span>
+          </div>
+
+          <div class="skill">
+            <h5>CSS</h5>
+            <span><span class="prog" data-progress="80%"></span></span>
+          </div>
+          <div class="skill">
+            <h5>JAVASCRIPT</h5>
+            <span><span class="prog" data-progress="100%"></span></span>
+          </div>
+          <div class="skill">
+            <h5>PYTHON</h5>
+            <span><span class="prog" data-progress="45%"></span></span>
+          </div>
+          <div class="skill">
+            <h5>PHP</h5>
+            <span><span class="prog" data-progress="15%"></span></span>
+          </div>
+          <div class="skill">
+            <h5>MYSQL</h5>
+            <span><span class="prog" data-progress="25%"></span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Skills-->
+    <!-- Gallery -->
+    <div class="gallery" id="gallery">
+      <div class="container">
+        <h3>Our Gallery</h3>
+        <div class="gallery-container">
+          <div class="gallery-img wow animate__bounceInUp">
+            <img src="./imgs/01.jpg" alt="" />
+          </div>
+          <div class="gallery-img wow animate__bounceInUp">
+            <img src="./imgs/02.jpg" alt="" />
+          </div>
+          <div class="gallery-img wow animate__bounceInUp">
+            <img src="./imgs/03.jpg" alt="" />
+          </div>
+          <div class="gallery-img wow animate__bounceInUp">
+            <img src="./imgs/04.jpg" alt="" />
+          </div>
+          <div class="gallery-img wow animate__bounceInUp">
+            <img src="./imgs/05.jpg" alt="" />
+          </div>
+          <div class="gallery-img wow animate__bounceInUp">
+            <img src="./imgs/06.png" alt="" />
+          </div>
+          <div class="gallery-img wow animate__bounceInUp">
+            <img src="./imgs/07.jpg" alt="" />
+          </div>
+          <div class="gallery-img wow animate__bounceInUp">
+            <img src="./imgs/08.jpg" alt="" />
+          </div>
+          <div class="gallery-img wow animate__bounceInUp">
+            <img src="./imgs/09.jpg" alt="" />
+          </div>
+          <div class="gallery-img wow animate__bounceInUp">
+            <img src="./imgs/10.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Gallery -->
+    <!-- Time Line -->
+    <div class="timeline" id="timeline">
+      <div class="container">
+        <div class="timeline-content">
+          <div class="year">2014</div>
+          <div class="left wow animate__fadeInLeft">
+            <h3>Photoshop Mastering</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+              tempore asperiores! repellendus porro pariatur possimus?
+            </p>
+          </div>
+          <div class="right wow animate__fadeInRight">
+            <h3>Training on PS</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, voluptas. Dolorum, tempore asperiores!
+            </p>
+          </div>
+          <div class="year">2016</div>
+          <div class="left wow animate__fadeInLeft">
+            <h3>Adobe After Effect</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, voluptas.
+            </p>
+          </div>
+          <div class="year">2020</div>
+          <div class="right wow animate__fadeInRight">
+            <h3>Adobe XD</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, voluptas.
+            </p>
+          </div>
+          <div class="year">2021</div>
+          <div class="right wow animate__fadeInRight">
+            <h3>Starting as Front End</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, voluptas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Time Line -->
+    <!-- Features -->
+    <div class="container" id="features">
+      <div class="features">
+        <h3>Our Features</h3>
+        <div class="features-content">
+          <div class="fbox wow animate__zoomInDown">
+            <div class="fimg"><img src="imgs/web-design.svg" alt="" /></div>
+            <div class="ftext">
+              <h4>Development</h4>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
+          <div class="fbox wow animate__zoomInDown">
+            <div class="fimg"><img src="imgs/programming.svg" alt="" /></div>
+            <div class="ftext">
+              <h4>Marketing</h4>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
+          <div class="fbox wow animate__zoomInDown">
+            <div class="fimg"><img src="imgs/hosting-icon.svg" alt="" /></div>
+            <div class="ftext">
+              <h4>Hosting</h4>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
+          <div class="fbox wow animate__zoomInDown">
+            <div class="fimg"><img src="imgs/mobile-app.svg" alt="" /></div>
+            <div class="ftext">
+              <h4>Mobile Develope</h4>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
+          <div class="fbox wow animate__zoomInDown">
+            <div class="fimg"><img src="imgs/graphic-design.svg" alt="" /></div>
+            <div class="ftext">
+              <h4>Cloud and Servers</h4>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
+          <div class="fbox wow animate__zoomInDown">
+            <div class="fimg"><img src="imgs/programming.svg" alt="" /></div>
+            <div class="ftext">
+              <h4>SEO</h4>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features -->
+    <!-- Testimonials -->
+    <div class="testimonials" id="testimonials">
+      <div class="container">
+        <h3>Testimonials</h3>
+        <div class="tboxs">
+          <div class="tbox wow animate__fadeInRight">
+            <p>
+              I'm very happy with the product its amazing and i recieve it very
+              fast and the price was amazing.
+            </p>
+            <h5>Ahmed Osama</h5>
+            <h6>CEO At Company</h6>
+          </div>
+          <div class="tbox wow animate__fadeInRight" data-wow-delay="0.2s">
+            <p>
+              I'm very happy with the product its amazing and i recieve it very
+              fast and the price was amazing.
+            </p>
+            <h5>Osama Fathy</h5>
+            <h6>Owner of the Company</h6>
+          </div>
+          <div class="tbox wow animate__fadeInRight" data-wow-delay="0.4s">
+            <p>
+              I'm very happy with the product its amazing and i recieve it very
+              fast and the price was amazing.
+            </p>
+            <h5>El-Z'amme</h5>
+            <h6>The z3eeem</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials -->
+    <!-- Contact Us -->
+    <div class="contact-us" id="contact-us">
+      <div class="container">
+        <h3>Contact Us</h3>
+        <form class="form">
+          <div class="col">
+            <input type="text" name="name" id="name" placeholder="Your Name" />
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Your Phone Number"
+            />
+            <input
+              type="email"
+              name="Email"
+              id="Email"
+              placeholder="Your Email"
+            />
+            <input
+              type="text"
+              name="Subject"
+              id="Subject"
+              placeholder="Your Subject"
+            />
+          </div>
+          <div class="col">
+            <textarea
+              name="msg"
+              id="msg"
+              cols="30"
+              rows="10"
+              placeholder="Your Massage"
+            ></textarea>
+            <button type="submit" id="form">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact Us -->
+    <footer>Created With Love By <span>Ahmed Osama</span>❤️</footer>
+    <!-- JS -->
+    <div class="toup">
+      <button type="button" id="toTop" style="display: none">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+    <div class="cursor"></div>
+    <script src="JS/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="JS/all.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
