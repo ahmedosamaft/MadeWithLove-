@@ -57,8 +57,9 @@ function btnCheck() {
     clearActive(randomOpts);
     document.querySelector("#random .yes").classList.add("active");
   } else {
-    clearBullets(randomOpts);
-
+    for (let op in randomOpts) {
+      randomOpts[op].classList.remove("active");
+    }
     document.querySelector("#random .no").classList.add("active");
   }
 }
@@ -108,6 +109,7 @@ window.onload = () => {
 //bullets
 
 let bullets = Array.from(window.bullets.children);
+
 
 bullets.forEach((bullet) => {
   bullet.addEventListener("click", () => {
