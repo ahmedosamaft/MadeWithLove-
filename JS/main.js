@@ -1,3 +1,6 @@
+const clearActive = (Arr) => {
+  Arr.forEach((ar) => ar.classList.remove("active"));
+};
 //Landing
 let landingPage = window.landingPage;
 //Imgs
@@ -41,9 +44,7 @@ gear.addEventListener("click", () => {
 let randomOpts = Array.from(window.random.children);
 randomOpts.forEach((opt) => {
   opt.addEventListener("click", (e) => {
-    for (let op in randomOpts) {
-      randomOpts[op].classList.remove("active");
-    }
+    clearActive(randomOpts);
     opt.classList.toggle("active");
     localStorage.setItem("random", opt.innerText.toLowerCase());
     check();
@@ -53,14 +54,11 @@ randomOpts.forEach((opt) => {
 
 function btnCheck() {
   if (randomMood) {
-    for (let op in randomOpts) {
-      randomOpts[op].classList.remove("active");
-    }
+    clearActive(randomOpts);
     document.querySelector("#random .yes").classList.add("active");
   } else {
-    for (let op in randomOpts) {
-      randomOpts[op].classList.remove("active");
-    }
+    clearBullets(randomOpts);
+
     document.querySelector("#random .no").classList.add("active");
   }
 }
@@ -108,11 +106,12 @@ window.onload = () => {
 };
 
 //bullets
+
 let bullets = Array.from(window.bullets.children);
 
 bullets.forEach((bullet) => {
   bullet.addEventListener("click", () => {
-    bullets.forEach((ele) => ele.classList.remove("active"));
+    clearActive(bullets);
     bullet.classList.add("active");
   });
 });
@@ -131,7 +130,6 @@ let skills = document.querySelector(".skills");
 let allSkills = document.querySelectorAll(".skill span span");
 window.onscroll = () => {
   let skillsOffsetTop = skills.offsetTop; // mkan el Element
-  let skillsOffsetHeight = skills.offsetHeight; // tol el Element
   let windowHeight = this.innerHeight; // Tol El 4a4a el m3roda
   let windowScrollTop = this.pageYOffset; //scorll
   if (windowScrollTop > skillsOffsetTop + 300 - windowHeight) {
@@ -281,3 +279,41 @@ document.addEventListener("click", () => {
     cursor.classList.remove("expand");
   }, 500);
 });
+
+// Fill Bullets
+
+let allSections = [
+  window.abouts,
+  window.skills,
+  window.gallery,
+  window.timeline,
+  window.features,
+  window.testimonials,
+];
+
+let sectionOffsetTop = [];
+let sectionOffsetHeight = [];
+
+for (let el in allSections) {
+  sectionOffsetTop.push(allSections[el].offsetTop);
+  sectionOffsetHeight.push(allSections[el].offsetHeight);
+}
+
+window.onscroll = () => {
+  for (let el in allSections) {
+    let ele = allSections[el];
+    if (
+      ele.offsetTop <= window.scrollY + 200 &&
+      ele.offsetTop + ele.offsetHeight >= window.scrollY
+    ) {
+      bullets.forEach((bullet) => {
+        if (bullet.dataset.section == `#${ele.id}`) {
+          clearActive(bullets);
+          bullet.classList.add("active");
+        }
+      });
+    } else if (window.scrollY < 400) {
+      clearActive(bullets);
+    }
+  }
+};
