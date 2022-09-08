@@ -130,12 +130,11 @@ bullets.forEach((bullet) => {
 
 let skills = document.querySelector(".skills");
 let allSkills = document.querySelectorAll(".skill span span");
-window.onscroll = () => {
+window.addEventListener("scroll", () => {
   let skillsOffsetTop = skills.offsetTop; // mkan el Element
   let windowHeight = this.innerHeight; // Tol El 4a4a el m3roda
-  let windowScrollTop = this.pageYOffset; //scorll
+  let windowScrollTop = this.scrollY; //scorll
   if (windowScrollTop > skillsOffsetTop + 300 - windowHeight) {
-    //mkan + tolh - 4a4a
     allSkills.forEach((skill) => {
       skill.style.width = skill.dataset.progress;
     });
@@ -149,7 +148,7 @@ window.onscroll = () => {
   } else {
     window.toTop.style.display = "none";
   }
-};
+});
 
 window.toTop.addEventListener("click", (e) => {
   window.scrollTo({
